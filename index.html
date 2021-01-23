@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>التحصيل الدراسي</title>
+<meta name="generator" content="https://www.kaaf.edu.sa/">
+<link href="2.png" rel="apple-touch-icon" sizes="93x90">
+<link href="tahsili1.css" rel="stylesheet">
+<link href="index.css" rel="stylesheet">
+<script src="jquery-1.12.4.min.js"></script>
+<script src="jquery-ui.min.js"></script>
+<script>
+$(document).ready(function()
+{
+   $("a[href*='#home']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#home').offset().top }, 600, 'easeInQuad');
+   });
+});
+</script>
+<script>
+$(document).ready(function()
+{
+   // change the date here
+   var dateFuture = new Date("February 21, 2021 07:35:00");
+   var dateNow = new Date();
+   var seconds = Math.floor((dateFuture - (dateNow))/1000);
+   var minutes = Math.floor(seconds/60);
+   var hours = Math.floor(minutes/60);
+   var days = Math.floor(hours/24);
+
+   hours = hours-(days*24);
+   minutes = minutes-(days*24*60)-(hours*60);
+   seconds = seconds-(days*24*60*60)-(hours*60*60)-(minutes*60);
+   
+   $('#wb_days strong').first().data('value', days).addClass('counter');
+   $('#wb_hours strong').first().data('value', hours).addClass('counter');
+   $('#wb_minutes strong').first().data('value', minutes).addClass('counter');
+   $('#wb_seconds strong').first().data('value', seconds).addClass('counter');
+
+   // change the ID here: 'home' is the ID of the layout grid!
+   var $numbers = $('#home .counter');
+     
+   $numbers.each(function() 
+   {
+     var $obj = $(this);
+     $obj.data('done', false);
+     $obj.text('0');
+   });
+   $(window).bind('scroll', function() 
+   {
+      $numbers.each(function() 
+      {
+         var $obj = $(this);
+         if (!$obj.data('done') && $(window).scrollTop() + $(window).height() >= $obj.offset().top) 
+         {
+            $obj.data('done', true);
+            $obj.animate({scroll: 1}, 
+            { 
+               duration: 3000, 
+               step: function(now) 
+               {
+                  var $obj = $(this);
+                  var val = Math.round($obj.data('value') * now);
+                  $obj.text(val);
+               }
+            });
+         }
+      });
+   }).triggerHandler('scroll');
+});
+</script>
+</head>
+<body <!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+
+<ul>
+
+ <li><a href="https://www.google.com.sa/"><img src="https://www.tech-wd.com/wd/wp-content/uploads/2009/10/home-icon.gif" width="30" height="30" border="" align="" /></a></li>
+
+<li><a href="https://www.kaaf.edu.sa/"> <img src="https://archive.org/download/kisspng-computer-icons-symbol-clip-art-symbols-5ad11f5b824794.6413934815236544915336/kisspng-computer-icons-symbol-clip-art-symbols-5ad11f5b824794.6413934815236544915336.png" width="30" height="30"/></a></li>
+
+<li><a href="https://twitter.com/kaafacademy"> <img src="https://ia801502.us.archive.org/27/items/t_20210113/T.png" width="30" height="30"/></a></li>
+
+<li><a href="https://www.instagram.com/kaafacademy/"> <img src="https://ia601507.us.archive.org/30/items/n_20210113/N.png" width="30" height="30"/></a></li>
+
+<li><a href="https://www.snapchat.com/add/kaafacademy"> <img src="https://ia601504.us.archive.org/35/items/s_20210113/S.png" width="30" height="30"/></a></li>
+
+<li><a href="https://www.youtube.com/channel/UCO1otlQjNIUOzT49TXE4yLA"> <img src="https://ia601409.us.archive.org/16/items/pngegg_202101/pngegg.png" width="30" height="30"/></a></li>
+</ul>
+
+</body>
+</html>>
+<div id="home">
+<div id="home_Container">
+<div id="wb_Text2">
+<span style="color:#FF0000;font-family:Arial;font-size:20px;"><strong>عزيزي جهز نفسك</strong></span><span style="color:#FF0000;font-family:Arial;font-size:16px;"><strong> </strong></span></div>
+<div id="wb_Heading1">
+<h3 id="Heading1">باقي على هذا </h3></div>
+
+<div id="wb_Image1">
+<img src="images/logo2.png" id="Image1" alt=""></div>
+
+<div id="wb_Text4">
+<span style="color:#179894;font-family:Arial;font-size:17px;"><strong>التحصيل الدراسي</strong></span></div>
+<div id="wb_Image2">
+<img src="images/1.png" id="Image2" alt=""></div>
+<div id="wb_Shape2">
+<img src="images/img0002.png" id="Shape2" alt=""></div>
+<div id="wb_Shape1">
+<img src="images/img0001.png" id="Shape1" alt=""></div>
+</div>
+</div>
+</body>
+</html>

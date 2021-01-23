@@ -1,0 +1,334 @@
+body
+{
+   background-color: #FFFFFF;
+   color: #000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   line-height: 1.1875;
+   margin: 0;
+   padding: 0;
+}
+#home
+{
+   background-color: transparent;
+   background-image: url(images/beach_bk.jpg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-attachment: scroll;
+   background-size: cover;
+}
+#wb_Text2 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px #000000 solid;
+   padding: 0;
+   margin: 0;
+   text-align: center;
+}
+#wb_Text2 div
+{
+   text-align: center;
+}
+#wb_Heading1
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px transparent solid;
+   border-radius: 11px;
+   padding: 0px 0px 0px 0px;
+}
+#Heading1
+{
+   color: #00008B;
+   font-family: Arial;
+   font-weight: bold;
+   font-size: 48px;
+   margin: 0;
+   text-align: center;
+}
+#Image1
+{
+   border: 0px #000000 solid;
+   padding: 0px 0px 0px 0px;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#wb_Text4 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px #000000 solid;
+   padding: 0;
+   margin: 0;
+   text-align: center;
+}
+#wb_Text4 div
+{
+   text-align: center;
+}
+#Image2
+{
+   border: 0px #000000 solid;
+   padding: 0px 0px 0px 0px;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#Shape1
+{
+   border-width: 0;
+}
+#Shape2
+{
+   border-width: 0;
+}
+#Shape1
+{
+   width: 222px;
+   height: 67px;
+}
+#Shape2
+{
+   width: 222px;
+   height: 67px;
+}
+#wb_Text2
+{
+   position: absolute;
+   left: -1240px;
+   top: -1200px;
+   width: 457px;
+   height: 24px;
+   text-align: center;
+   z-index: 0;
+}
+#wb_Image1
+{
+   position: absolute;
+   left: 0px;
+   top: 0px;
+   width: 76px;
+   height: 76px;
+   z-index: 3;
+}
+#wb_Image2
+{
+   position: absolute;
+   left: 76px;
+   top: 59px;
+   width: 499px;
+   height: 17px;
+   z-index: 6;
+}
+#wb_Text4
+{
+   position: absolute;
+   left: 200px;
+   top: 20px;
+   width: 174px;
+   height: 19px;
+   text-align: center;
+   z-index: 5;
+}
+#home_Container
+{
+   width: 575px;
+   position: relative;
+   margin-left: auto;
+   margin-right: auto;
+   text-align: left;
+}
+#wb_Shape1
+{
+   position: absolute;
+   left: 33px;
+   top: 243px;
+   width: 222px;
+   height: 67px;
+   z-index: 8;
+}
+#wb_Shape2
+{
+   position: absolute;
+   left: 330px;
+   top: 243px;
+   width: 222px;
+   height: 67px;
+   z-index: 7;
+}
+#wb_Heading1
+{
+   position: absolute;
+   left: -1258px;
+   top: -1306px;
+   width: 519px;
+   height: 82px;
+   text-align: center;
+   z-index: 1;
+}
+#home
+{
+   position: relative;
+   text-align: center;
+   width: 100%;
+   height: 100%;
+   float: left;
+   display: block;
+   z-index: 9;
+}
+@media only screen and (max-width: 802px)
+{
+#home
+{
+   visibility: visible;
+   display: inline;
+   font-size: 8px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: transparent;
+   background-image: url(images/beach_bk.jpg);
+   background-repeat: no-repeat;
+   background-position: center center !important;
+   background-attachment: scroll;
+   background-size: cover;
+}
+#home
+{
+   margin: 0px 0px 0px 0px;
+}
+#home_Container
+{
+   width: 340px;
+}
+#wb_Text2
+{
+   left: -1240px;
+   top: -1200px;
+   width: 457px;
+   height: 24px;
+   visibility: visible;
+   display: inline;
+   font-size: 8px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+}
+#wb_Text2
+{
+   margin: 0px 0px 0px 0px;
+   padding: 0px 0px 0px 0px;
+}
+#wb_Heading1
+{
+   left: -1258px;
+   top: -1306px;
+   width: 519px;
+   height: 82px;
+   visibility: visible;
+   display: inline;
+   color: #00008B;
+   font-size: 48px;
+   font-family: Arial;
+   font-weight: bold;
+   font-style: normal;
+   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+   border-radius: 11px;
+}
+#wb_Image1
+{
+   left: 0px;
+   top: 0px;
+   width: 76px;
+   height: 76px;
+   visibility: visible;
+   display: inline;
+}
+#wb_Text4
+{
+   left: 120px;
+   top: 20px;
+   width: 174px;
+   height: 19px;
+   visibility: visible;
+   display: inline;
+   font-size: 8px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+}
+#wb_Text4
+{
+   margin: 0px 0px 0px 0px;
+   padding: 0px 0px 0px 0px;
+}
+#wb_Image2
+{
+   left: 76px;
+   top: 59px;
+   width: 264px;
+   height: 17px;
+   visibility: visible;
+   display: inline;
+}
+#wb_Shape1
+{
+   left: 50px;
+   top: 320px;
+   visibility: visible;
+   display: inline;
+}
+#wb_Shape2
+{
+   left: 50px;
+   top: 200px;
+   visibility: visible;
+   display: inline;
+}
+}
+body {margin:0;}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #3b5f5c;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: left;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #666;
+}
+
+.active {
+    background-color: #4ETF50;
+}
